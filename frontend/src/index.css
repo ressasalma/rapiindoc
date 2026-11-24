@@ -1,0 +1,66 @@
+:root {
+  color: #2b1b22;
+  background: #fbfaf7;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --ink: #2b1b22;
+  --paper: #fbfaf7;
+  --sky: #bfe3ea;
+  --pink: #f9c6d4;
+  --sage: #b9d58a;
+  --gold: #e8b93c;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; overflow-x: hidden; background-color: #FBFAF7; color: #2B1B22; }
+
+.bg-paper-grid {
+  background-image: 
+    linear-gradient(rgba(43, 27, 34, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(43, 27, 34, 0.045) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.die-cut-sticker {
+  filter: drop-shadow(0 6px 14px rgba(43, 27, 34, 0.12));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.die-cut-sticker:hover {
+  transform: translateY(-3px) scale(1.02);
+  filter: drop-shadow(0 10px 20px rgba(43, 27, 34, 0.16));
+}
+
+.bubble-tail-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 24px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #2B1B22;
+}
+
+.rubber-stamp {
+  border: 3px double #2B1B22;
+  box-shadow: 0 0 0 2px #B9D58A;
+}
+
+.font-serif-display {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "opsz" 120, "wght" 700, "SOFT" 40;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker 32s linear infinite;
+}
+.animate-ticker:hover {
+  animation-play-state: paused;
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              langit: '#BFE3EA',
+              permen: '#F9C6D4',
+              daun: '#B9D58A',
+              kertas: '#FBFAF7',
+              tinta: '#2B1B22',
+              bintang: '#E8B93C',
+              'permen-light': '#FDF2F5',
+              'langit-light': '#F0F9FB',
+              'daun-light': '#F4F9EC',
+              "surface-dim": "#dbdad7",
+              "surface-bright": "#faf9f6",
+              "surface-container": "#efeeeb",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e9e8e5",
+              "on-surface-variant": "#4f4447",
+              "primary-fixed": "#ffd9e2",
+              "surface-container-low": "#f4f3f1",
+              "secondary": "#42646a",
+              "secondary-fixed-dim": "#a9cdd4",
+              "on-error-container": "#93000a",
+              "tertiary-container": "#c1dd91",
+              "on-background": "#1a1c1a",
+              "on-error": "#ffffff",
+              "background": "#faf9f6",
+              "secondary-container": "#c2e6ed",
+              "on-primary-container": "#77505c",
+              "on-secondary-fixed-variant": "#2a4c52",
+              "on-primary-fixed": "#2f121d",
+              "on-secondary-container": "#46686e",
+              "secondary-fixed": "#c5e9f0",
+              "surface": "#faf9f6",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#b4d086",
+              "inverse-primary": "#ebb9c7",
+              "on-primary": "#ffffff",
+              "primary-container": "#f9c6d4",
+              "on-tertiary-fixed": "#121f00",
+              "primary": "#7b535f",
+              "surface-variant": "#e3e2e0",
+              "inverse-on-surface": "#f1f1ee",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-container": "#4b6224",
+              "outline-variant": "#d3c2c6",
+              "error": "#ba1a1a",
+              "outline": "#817477",
+              "tertiary-fixed": "#d0ed9f",
+              "primary-fixed-dim": "#ebb9c7",
+              "on-tertiary-fixed-variant": "#374d12",
+              "on-surface": "#1a1c1a",
+              "on-secondary-fixed": "#001f24",
+              "inverse-surface": "#2f312f",
+              "surface-container-highest": "#e3e2e0",
+              "error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#603c48",
+              "surface-tint": "#7b535f",
+              "tertiary": "#4e6628"
+            },
+            fontFamily: {
+              serif: ['Fraunces', 'Georgia', 'serif'],
+              'serif-display': ['Fraunces', 'Georgia', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              mono: ['"DM Mono"', 'monospace'],
+              'headline-xl': ['Playfair Display', 'serif'],
+              'headline-lg': ['Playfair Display', 'serif'],
+              'headline-md': ['Playfair Display', 'serif'],
+              'headline-sm': ['Playfair Display', 'serif'],
+              'title-lg': ['"Plus Jakarta Sans"', 'sans-serif'],
+              'title-md': ['"Plus Jakarta Sans"', 'sans-serif'],
+              'body-lg': ['"Plus Jakarta Sans"', 'sans-serif'],
+              'body-md': ['"Plus Jakarta Sans"', 'sans-serif'],
+              'body-sm': ['"Plus Jakarta Sans"', 'sans-serif'],
+              'label-lg': ['"Space Mono"', 'monospace'],
+              'label-md': ['"Space Mono"', 'monospace'],
+              'label-sm': ['"Space Mono"', 'monospace'],
+            },
+            boxShadow: {
+              'sticker': '0 6px 0 #2B1B22',
+              'sticker-sm': '0 3px 0 #2B1B22',
+              'sticker-lg': '0 10px 0 #2B1B22',
+              'clay': 'inset 0 -4px 0 rgba(43,27,34,0.14), 0 8px 18px rgba(43,27,34,0.1)',
+              'paper': '0 12px 28px -4px rgba(43,27,34,0.12), 0 2px 6px rgba(43,27,34,0.06)',
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px"
+            },
+            spacing: {
+              'gutter': '1.25rem',
+              'margin': '1.5rem',
+              'gutter-desktop': '1.75rem',
+              'margin-desktop': '2.5rem',
+              'space-xs': '0.25rem',
+              'space-sm': '0.5rem',
+              'space-md': '1rem',
+              'space-lg': '1.5rem',
+              'space-xl': '2.25rem',
+            }
+          }
+        }
+      }
+    </script>
+    <title>RapiInDoc</title>
+  </head>
+  <body class="bg-kertas text-tinta antialiased selection:bg-permen selection:text-tinta">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
